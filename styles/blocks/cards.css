@@ -240,23 +240,23 @@
 }
 
 .stock-label::before {
-  background-image: url("/images/stock-label.svg");
+  background-image: url("/images/stock-label.svg") !important;
 }
 
 .walet::before {
-  background-image: url("/images/walet.svg");
+  background-image: url("/images/walet.svg") !important;
 }
 
 .shield::before {
-  background-image: url("/images/shield.svg");
+  background-image: url("/images/shield.svg") !important;
 }
 
 .winter-tire::before {
-  background-image: url("/images/winter-tire.svg");
+  background-image: url("/images/winter-tire.svg") !important;
 }
 
 .box::before {
-  background-image: url("/images/box.svg");
+  background-image: url("/images/box.svg") !important;
 }
 
 /*Блок кнопок*/
