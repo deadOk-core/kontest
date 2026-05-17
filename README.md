@@ -1,1 +1,1 @@
-# kontest
+Ссылка на результат: https://deadok-core.github.io/kontest/
