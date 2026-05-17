@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--шрифт и фавиконки-->
+    <link rel="stylesheet" href="./fonts/fonts.css" />
+    <link rel="stylesheet" href="./styles/globals.css" />
+
+    <!--подключение файлов для цветовых тем-->
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/blocks/header.css" />
+    <link rel="stylesheet" href="./styles/blocks/main-advertising.css" />
+    <link rel="stylesheet" href="./styles//blocks/timer.css" />
+    <link rel="stylesheet" href="./styles/blocks/cards.css" />
+    <!-- <link rel="stylesheet" href="./styles/timer.css" /> -->
+
+    <title>Тестовое задание Haval</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-info">
+        <span class="official-diller-group">
+          <!-- <p class="official-diller">Официальный дилер</p> -->
+          <img src="./images/haval-logo.svg" alt="Логотип Haval" />
+        </span>
+
+        <span class="tel-group">
+          <img class="tel-group-img" src="./images/tel.svg" alt="Иконка телефона" />
+          <p class="tel">+0 000 000 00 00</p>
+        </span>
+
+        <span class="adres-group">
+          <img src="./images/map.svg" alt="Иконка карты" />
+          <span class="adress-block">
+            <p class="city">г. Москва</p>
+            <p class="work-time">Часы работы с 09:00 до 21:00</p>
+          </span>
+        </span>
+      </div>
+
+      <nav class="navigate">
+        <ul class="navigate-list-cars cars">
+          <li class="navigate-item">
+            <a class="navigate-item-link">M6</a>
+          </li>
+          <li class="navigate-item">
+            <a class="navigate-item-link">DARGO X</a>
+          </li>
+          <li class="navigate-item">
+            <a class="navigate-item-link">DARGO</a>
+          </li>
+          <li class="navigate-item">
+            <a class="navigate-item-link">JOLION</a>
+          </li>
+          <li class="navigate-item">
+            <a class="navigate-item-link">F7x</a>
+          </li>
+          <li class="navigate-item">
+            <a class="navigate-item-link">F7</a>
+          </li>
+          <li class="navigate-item">
+            <a class="navigate-item-link">H9</a>
+          </li>
+          <li class="navigate-item">
+            <a class="navigate-item-link">GWM Poer</a>
+          </li>
+          <li class="navigate-item">
+            <a class="navigate-item-link">GWM Poer KINGKONG</a>
+          </li>
+        </ul>
+
+        <ul class="navigate-list-options options">
+          <li class="navigate-item">
+            <a class="navigate-item-link">ПОДОБРАТЬ КОМПЛЕКТАЦИЮ</a>
+          </li>
+          <li class="navigate-item">
+            <a class="navigate-item-link">ТЕСТ-ДРАЙВ</a>
+          </li>
+          <li class="navigate-item">
+            <a class="navigate-item-link">КОНТАКТЫ</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="main-advertising">
+        <span class="title-block">
+          <h1 class="title">Увеличиваем выгоды на HAVAL</h1>
+          <h2 class="title-highlight">в Химках к Чёрной пятнице!</h2>
+        </span>
+
+        <button class="button main-condition-button">
+          Зафиксировать условия
+        </button>
+      </section>
+
+      <section class="timer">
+        <!-- Sinoby Timer -->
+         <div>
+        <p class="timer-text">Оставьте заявку и зафиксируйте условия</p>
+        <div
+          class="sinoby-timer"
+          data-sinoby-reserve="sinoby-wr4q4z"
+          data-config='{
+            "type": "fixed-end",
+            "preset": "rings-soft",
+            "schedule": {
+                "endAt": "2026-06-01T00:00:00"
+            },
+            "visibility": {
+                "separator": false
+            },
+            "style": {
+                "digitGap": 8,
+                "digitColor": "#000000",
+                "labelSize": 18,
+                "labelGap": 0,
+                "labelColor": "#b9b9b9",
+                "cardBackgroundColor": "#f8fafc",
+                "ringCurrentColor": "#00cabf",
+                "ringRemainingColor": "#f3f3f3"
+            }
+        }'
+          data-lazy="true"
+        ></div>
+         </div>
+        <script src="//timer.sinoby.ru/public/assets/embed/timer-core.min.js?v=20260514a"></script>
+        <!-- /Sinoby Timer -->
+
+        <button class="button timer-condition-button">
+          Зафиксировать условия
+        </button>
+      </section>
+
+      <section class="cards-section">
+        <ul class="cards-list">
+            <li class="card m6">
+              <div class="wrap">
+              <input type="radio" name="m-product-color" id="m-color-black" class="color-input">
+              <input type="radio" name="m-product-color" id="m-color-white" class="color-input">
+              <input type="radio" name="m-product-color" id="m-color-gray" class="color-input" checked>
+
+              <div class="in-stock">
+                <p class="in-stock-text">В наличии <br><span class="in-stock-text-highlight">21 автомобиль</span></p>
+              </div>
+
+              <div class="card-image-wrapp">
+                  <!-- <img src="./images/car-back.svg" alt="Фон сзади машинок"></img> -->
+                  <div class="images">
+                    <div class="text-wrap">
+                      <span class="text-on-card">
+                          <h3>HAVAL M6</h3>
+                          <p class="benefit-text">Выгода до <span class="highlight-price">410 000 ₽</span></p>
+                      </span>
+    
+                      <span class="test-drive-block">
+                          <img src="./images/pencil.svg" alt="Иконка ручки"></img>
+                          <p class="test-drive-text">Записаться на тест-драйв</p>
+                      </span>
+                    </div>
+
+                    <img src="./images/m6-black.png" alt="Черный" class="black-img">
+                    <img src="./images/m6-white.png" alt="Белый" class="white-img">
+                    <img src="./images/m6-gray.png" alt="Серый" class="gray-img">
+                  </div>
+              </div>
+
+              <div class="colors">
+                <label for="m-color-black" class="color-label label-black"></label>
+                <label for="m-color-white" class="color-label label-white"></label>
+                <label for="m-color-gray" class="color-label label-gray"></label>
+              </div>
+
+              <div class="actions">
+                <ul class="action-list">
+                  <li class="stock-label">Выгода по госпрограмме</li>
+                  <li class="walet">Максимальные выгоды по трейд-ин</li>
+                  <li class="shield">КАСКО в подарок</li>
+                  <li class="winter-tire">Зимние шины в подарок</li>
+                  <li class="box">Доп.оборудование на 100 000р в подарок</li>
+                </ul>
+              </div>
+
+              <div class="buttons">
+                <button class="button card-button price">Узнать стоимость</button>
+                <button class="button card-button credit">Рассчитать кредит</button>
+                <button class="button card-button complectation">Подобрать комплектацию</button>
+              </div>
+            </div>
+            </li>
+
+            <li class="card haval-dargo-x">
+              <div class="wrap">
+              <input type="radio" name="x-product-color" id="x-color-black" class="color-input">
+              <input type="radio" name="x-product-color" id="x-color-white" class="color-input">
+              <input type="radio" name="x-product-color" id="x-color-gray" class="color-input">
+              <input type="radio" name="x-product-color" id="x-color-red" class="color-input" checked>
+
+              <div class="in-stock">
+                <p class="in-stock-text">В наличии</p>
+              </div>
+
+              <div class="card-image-wrapp">
+                  <!-- <img src="./images/car-back.svg" alt="Фон сзади машинок"></img> -->
+                  <div class="images">
+                    <div class="text-wrap">
+                      <span class="text-on-card">
+                          <h3>HAVAL DARGO X</h3>
+                          <p class="benefit-text">Выгода до <span class="highlight-price">320 000 ₽</span></p>
+                      </span>
+    
+                      <span class="test-drive-block">
+                          <img src="./images/pencil.svg" alt="Иконка ручки"></img>
+                          <p class="test-drive-text">Записаться на тест-драйв</p>
+                      </span>
+                    </div>
+
+                    <img src="./images/dargo-x-black.png" alt="Черный" class="black-img">
+                    <img src="./images/dargo-x-white.png" alt="Белый" class="white-img">
+                    <img src="./images/dargo-x-gray.png" alt="Серый" class="gray-img">
+                    <img src="./images/dargo-x-red.png" alt="Красный" class="red-img">
+                  </div>
+              </div>
+
+              <div class="colors">
+                <label for="x-color-black" class="color-label label-black"></label>
+                <label for="x-color-white" class="color-label label-white"></label>
+                <label for="x-color-gray" class="color-label label-gray"></label>
+                <label for="x-color-red" class="color-label label-red"></label>
+              </div>
+
+              <div class="actions">
+                <ul class="action-list">
+                  <li class="stock-label">Выгода по госпрограмме</li>
+                  <li class="walet">Максимальные выгоды по трейд-ин</li>
+                  <li class="shield">КАСКО в подарок</li>
+                  <li class="winter-tire">Зимние шины в подарок</li>
+                  <li class="box">Доп.оборудование на 100 000р в подарок</li>
+                </ul>
+              </div>
+
+              <div class="buttons">
+                <button class="button card-button price">Узнать стоимость</button>
+                <button class="button card-button credit">Рассчитать кредит</button>
+                <button class="button card-button complectation">Подобрать комплектацию</button>
+              </div>
+            </div>
+            </li>
+
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>

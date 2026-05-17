@@ -1,0 +1,12 @@
+.button {
+  z-index: 2;
+  background-color: #00cabf;
+  color: #fff;
+  padding: 21px 23px 20px 22px;
+  text-transform: uppercase;
+  border: none;
+}
+
+.button:hover {
+  cursor: pointer;
+}

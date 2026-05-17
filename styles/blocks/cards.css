@@ -1,0 +1,282 @@
+.cards-list {
+  display: grid;
+  grid-template-columns: repeat(2, 560px);
+  gap: 31px;
+  justify-content: center; /* вертикальное центрирование */
+  align-items: center; /* горизонтальное центрирование */
+  padding-top: 78px;
+  padding-bottom: 19px;
+}
+
+.cards-list li {
+  display: grid;
+  gap: 31px;
+  width: 560px;
+  justify-items: center; /* вертикальное центрирование */
+  align-items: center; /* горизонтальное центрирование */
+  background-color: rgba(243, 243, 243, 1);
+}
+
+.card {
+  padding: 40px;
+  position: relative;
+}
+
+.in-stock {
+    position: absolute;
+    top: -21px;
+    right: 40px;
+    width: 182px;
+    height: 42px;
+    background-color: rgba(0, 202, 191, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.in-stock-text {
+    text-align: center;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.in-stock-text-highlight {
+    color: #000;
+}
+
+.color-input {
+  display: none;
+}
+
+.images {
+  position: relative;
+  background-color: #fff;
+  background-image: url("/images/car-back.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 480px;
+  height: 356px;
+}
+
+.images img {
+  position: absolute;
+  bottom: -45px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+}
+
+.images img:hover {
+    cursor: pointer;
+}
+
+.wrap {
+  width: 480px;
+}
+
+.card-image-wrapp {
+  position: relative;
+  width: 100%;
+  z-index: 1; /* Базовый слой */
+}
+
+#m-color-black:checked ~ .card-image-wrapp .black-img,
+#m-color-white:checked ~ .card-image-wrapp .white-img,
+#m-color-gray:checked ~ .card-image-wrapp .gray-img {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* === DARGO X: Переключение картинок === */
+#x-color-black:checked ~ .card-image-wrapp .black-img,
+#x-color-white:checked ~ .card-image-wrapp .white-img,
+#x-color-gray:checked ~ .card-image-wrapp .gray-img,
+#x-color-red:checked ~ .card-image-wrapp .red-img {
+  opacity: 1;
+  visibility: visible;
+}
+
+.colors {
+  position: relative;
+  width: 100%;
+  display: flex;
+  gap: 16px;
+  /* align-items: center; */
+  justify-content: center;
+  padding-top: 26px;
+  padding-bottom: 27px;
+  z-index: 100;
+}
+
+.color-label {
+  display: block;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 3px solid transparent;
+  transition: 0.2s;
+}
+
+.label-black {
+  background: #1a1a1a;
+}
+
+.label-white {
+  background: rgba(231, 231, 231, 1);
+}
+
+.label-gray {
+  background: rgba(161, 161, 161, 1);
+}
+
+.label-red {
+  background: rgba(161, 58, 33, 1);
+  
+}
+
+/* M6 */
+
+#m-color-gray:checked ~ .colors .label-gray {
+    border: 3px solid #ccc;
+    box-shadow: 0px 0px 0px 3px rgba(231, 231, 231, 1);
+}
+
+/* DARGO X */
+
+#x-color-red:checked ~ .colors .label-red {
+  border-color: rgba(161, 58, 33, 1);
+  box-shadow: 0px 0px 0px 3px rgba(231, 231, 231, 1);
+}
+
+.text-wrap {
+  /* width: 480px; */
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  /* grid-template-rows: 1fr 1fr; */
+  /* row-gap: 20px; */
+  column-gap: 21px;
+  z-index: 5;
+  pointer-events: none; /* Текст не перехватывает клики */
+  padding: 24px 24px 13px 24px;
+}
+
+.text-on-card {
+  display: grid;
+  row-gap: 20px;
+  font-size: 22px;
+  line-height: 30.6px;
+  z-index: 10;
+}
+
+.benefit-text {
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.highlight-price {
+  color: rgba(0, 202, 191, 1);
+  font-weight: 500;
+}
+
+.test-drive-text {
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 100%;
+}
+
+/* Акции*/
+
+.actions {
+  padding-bottom: 32px;
+}
+
+.action-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  row-gap: 12px;
+}
+
+.action-list li {
+  max-width: 480px;
+  width: 100%;
+  font-weight: 300;
+  font-size: 14px;
+  display: flex;
+  gap: 12px;
+}
+
+.action-list li::before {
+  content: "";
+  /* Иконка через background */
+  background-color: #000;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* left: 100px; */
+  /* background-size: 14px 14px; */
+
+  /* Размеры кружка */
+  min-width: 28px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  /* flex-shrink: 0; */
+}
+
+.action-list li:hover {
+  cursor: pointer;
+}
+
+.action-list li:hover::before {
+  background-color: rgba(0, 202, 191, 1);
+}
+
+.stock-label::before {
+  background-image: url("/images/stock-label.svg");
+}
+
+.walet::before {
+  background-image: url("/images/walet.svg");
+}
+
+.shield::before {
+  background-image: url("/images/shield.svg");
+}
+
+.winter-tire::before {
+  background-image: url("/images/winter-tire.svg");
+}
+
+.box::before {
+  background-image: url("/images/box.svg");
+}
+
+/*Блок кнопок*/
+
+.buttons {
+  display: grid;
+  gap: 10px;
+}
+
+.card-button {
+  width: 100%;
+  padding: 22px 0 22px 0;
+}
+
+.credit {
+  background-color: #000;
+}
+
+.complectation {
+  border: 1px solid #000;
+  color: #000;
+  background-color: #fff;
+}

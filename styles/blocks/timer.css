@@ -1,0 +1,33 @@
+.timer {
+    display: flex;
+    background-color: rgba(243, 243, 243, 1);
+    height: 100%;
+    gap: 113px;
+    justify-content: center; /* вертикальное центрирование */
+    align-items: center; /* горизонтальное центрирование */
+    padding-top: 35px;
+    padding-bottom: 18px;
+}
+
+.timer-text {
+    text-transform: uppercase;
+    font-weight: 400;
+    padding-bottom: 9px;
+}
+
+/* Фиксирует высоту таймера до загрузки */
+.sinoby-timer[data-sinoby-reserve="sinoby-wr4q4z"] {
+  display: block;
+  min-height: 114px;
+  width: 571px;
+  /* height: 130px; */
+}
+@media (max-width: 767px) {
+  .sinoby-timer[data-sinoby-reserve="sinoby-wr4q4z"] {
+    min-height: 83px;
+  }
+}
+
+.timer-condition-button {
+  padding: 25px 64px 26px 74px;
+}

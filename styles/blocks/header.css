@@ -1,0 +1,95 @@
+header {
+    background-color: #000;
+    color: #fff;
+    min-width: 1151px;
+}
+
+.header-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 14px 375px;
+}
+
+.header-info span {
+    cursor: pointer;
+}
+
+.tel-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.tel-group-img {
+    width: 21px;
+    height: 24px;
+}
+
+.tel {
+    font-size: 15px;
+    line-height: 100%;
+    text-align: center;
+}
+
+.adres-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.adres-group-img {
+    width: 17px;
+    height: 28px;
+}
+
+.adress-block {
+    font-weight: 400;
+    line-height: 100%;
+}
+
+.city {
+    font-size: 13px;
+}
+
+.work-time {
+    font-size: 12px;
+}
+
+/* nav блок */
+
+.navigate {
+    display: flex;
+    /* gap: 54px; */
+    justify-content: space-between;
+    padding: 10px 0;
+    width: 1170px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.cars {
+    justify-content: space-between;
+}
+
+.navigate ul {
+    display: flex;
+    gap: 13px;
+
+}
+
+.navigate-list-cars li {
+    font-size: 10.83px;
+    /* line-height: 100%; */
+}
+
+.navigate-list-options li {
+    font-size: 11px;
+    /* line-height: 100%; */
+    font-weight: 400;
+}
+
+.navigate-item-link:hover {
+    cursor: pointer;
+}

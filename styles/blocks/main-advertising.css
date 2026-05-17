@@ -1,0 +1,45 @@
+.main-advertising {
+  position: relative;
+  background-image: url("/images/main.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 756px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: top; /* вертикальное центрирование */
+  align-items: center; /* горизонтальное центрирование */
+  gap: 24px;
+}
+
+.title-block {
+  padding-top: 17px;
+  padding-bottom: 20px;
+  position: relative;
+  color: white;
+  text-align: center;
+  z-index: 2;
+
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.5) 38.72%,
+    rgba(0, 0, 0, 0.5) 61.63%,
+    rgba(0, 0, 0, 0) 100%
+  );
+
+  backdrop-filter: blur(10.6px);
+}
+
+.title {
+  font-size: 40px;
+  margin-top: 63px;
+  line-height: 55px;
+}
+
+.title-highlight {
+  font-size: 40px;
+  line-height: 100%;
+  color: #00cabf;
+}
